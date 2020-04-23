@@ -1,0 +1,70 @@
+Good morning all
+===============
+Today Concepts:
+    -->dynamic URL Mapping
+    -->templates
+        -->it will store all .html files
+        -->we have to create templates folder inside our app
+        --> inside templates folder again we have to create
+            one more folder with app name
+        --> for accessing .html files we have to use render fuction
+            render(request,'html file name',{})
+DTL:Django Template Language
+
+    --> for printing values we have to use {{ name }}
+    --> for implementing logics like conditional and looping statements
+     we have to use {% %}
+         {% if condi %}
+
+         {% endif %}
+
+        {%  if condi %}
+
+        {% elif cond %}
+
+        {% else %}
+
+        {% endif %}
+
+--> for looping statements
+        {% for i in data %}
+
+        {% endfor %}
+
+Task1:
+           create login form
+           -> you have to store static uname and pwd
+           -> if users uname and password matche with your static data
+           then show a valid message otherwise show not valid
+Task2:
+        -->implementing score board
+Task3:
+        --> implement restrunt applications
+
+
+    
+
+
+
+           
+           
+
+
+
+
+    
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+         
+    

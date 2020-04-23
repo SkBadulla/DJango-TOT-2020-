@@ -1,0 +1,67 @@
+Good morning
+------------------
+day1(21-04-2020):
+===============
+python oops:
+    --> class
+    --> object
+    --> constructors
+    --> inheritance
+
+class:
+    it is collection of variables and methods
+    function: is a coolection statements
+    method: if function is existed inside the class then will call that is a method.
+    syntax:
+        class class_name:
+            list of vars
+            list of methods
+
+Object:
+    it is a instance of a class
+    syntax:
+
+        obj_name = class_name
+
+constructors:
+    the main advantage of constructor is without using object we will call function
+    
+    class className:
+
+        def __init__(self):# it is cinstructor
+        def __init__(self,a,b)
+        def __init__(a,b,self)
+
+Package and Module:
+    Package(Folder):
+        it is a collection of modules
+    Module:
+        - that is .py file
+        - it is a collection of functions or classes
+        - for accesing modules we are using import keyword 
+        - for accessing modules we have few different ways
+            - import myModule
+            - from myModule import Calsi
+            - from myModule.Calsi import add
+            - from myModule.Calsi import *
+task1:
+=====
+    --->you have to create a class i.e UserInfo('abdul')
+    ---> setAddrs(empId,mailid,cmpName)
+    ---> showDetails()
+            - you have to print name,empid,mailid and cmpname of the user
+
+Inheritance:
+==========
+    --> we are trying to inherting something from parent calss to child class
+    --> general format is class childClass(parentClass):
+    --> single level inheritance
+        -- there is only one parrnt calss and pny one child class
+    --> multilevel
+        -- > one or more parents and one or more childs
+    --> mutiple
+        --> more than one parent and one child
+    --> hibrid etc
+        --- it is combination of all inhertance
+Polymorphism:
+=============
