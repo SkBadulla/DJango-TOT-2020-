@@ -31,4 +31,25 @@ def details(request):
 	return render(request,'firstApp/details.html',{'info':data})
 
 
+def scboard(request):
+	if request.method == 'POST':
+		team1 = request.POST.get('team1')
+		team2 = request.POST.get('team2')
+		if team1 is not None:
+			t1val = int(request.POST.get('t1val')) + 1
+			t2val = int(request.POST.get('t2val'))
+		else:
+			t1val = int(request.POST.get('t1val'))
+			t2val = int(request.POST.get('t2val'))+1
+		
+		scores = {'t1val':t1val,'t2val':t2val}
+		return render(request,'firstApp/scboard.html',scores)
+
+	return render(request,'firstApp/scboard.html',{})
+
+def home(request):
+	return render(request,'firstApp/home.html')
+
+
+
 

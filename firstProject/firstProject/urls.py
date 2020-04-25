@@ -25,4 +25,9 @@ urlpatterns = [
     path('message/',views.message,name='message'),
     path('register/',views.register,name='register'),
     path('details/',views.details,name='userDetils'),
+    path('scboard/',views.scboard,name='scboard'),
+    path('home/',views.home,name='home'),
+
+
+
 ]
