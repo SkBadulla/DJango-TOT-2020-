@@ -1,0 +1,159 @@
+Good morning all:
+===============
+---> for storing we will write sql queries like create,select,insert etc
+---> instade of writing queries will use ORM
+ORM(Object relational mapping): bu using objects i can access
+    stored data in database.
+    -->how to insert data
+    --> how to access data
+    ---> update and delete
+
+    --> data inserting:
+            --> to insert data we have 2 different ways:
+                -->1st way: here i am using save()
+                        obj = Emp(last_name='value',first_name='value',age='value')
+                        obj.save()
+                ---> 2nd way: here iam using create()
+                        obj = Emp.objects.create(last_name='value',first_name='value',age='value')
+                        --> the advantage of using this procedure is no need to use sve method here
+
+    -->procedure for this operations is:
+        -- open cmd from ur project location
+        -- from this location i want to open python shell
+        -- for that cmd is 'python manage.py shell'
+                -- run this cmd tp connect with db table
+                        from firstApp.models import Emp
+    -->procedure for retriving data:
+        --> sql query to retrive all rows
+            select * from table_name
+        -- > in orm, class_name.objects.all()
+        --> to access specific fields 
+            selct first_name,last_name from tableName
+            --> in orm, class_name.objects.values('first_name','last_name')
+                -- > this values() returns data in dict format
+            --> to access data in list then we will use values_list('first_name')
+                --> it retruns data in list formate
+            --> i wan to access a specific person details 
+                -->for that sql is:
+                    select * from tableName where name='abdul'
+                    
+                --> in orm : we have to
+                    use 2 diferent functions,those are get() and filter()
+                    --> using get() we can't access multiple records
+                        data = tableName.objectcs.get(pk=2)
+                    -->filter(): it returns multiple records
+                        data  = tableName.objects.filter(firt_name='values')
+                    --> id of a perticular person
+                        info = Emp.objects.values('id').get(first_name='ravi')
+                    --> i want return first user record:
+                        -->in sql: select * from tableName limit 1
+                        --> in orm: className.objects.first()
+                    --> i want to return last record:
+                        --> in orm: info = Emp.objects.last()
+                    --> fetch data in ascending order:
+                            info = Emp.objects.order_by('first_name')
+                    -->fetching data in decending order
+                        info = Emp.objects.order_by('-first_name')
+                    ---> i want to fetch top 3 records
+                            --> for this there is no  specific function, so that we
+                            will use list slicing.
+                            -- in orm: calssname.objects.all()[:3]
+                    --> wants to return last 3 records
+                            -->info = Emp.objects.order_by('-id')[:3]
+
+        --> Update:
+             --> to update a specific field in all records
+                     info = Emp.objects.all().update(age='25')
+            --> i want update age of a perticular person
+                    --> first we have to fetch data of a person
+                            info = Emp.objects.get(first_name='siva')
+                    --> then we will update
+                            info.age=28
+                    --> then save data
+                            info.save()
+        -->delete:
+            -->  we can able to delete to all records:
+                    --> in sql: delete from tableName
+                    -->in orm: Emp.objects.all().delete()
+            --> wants to delete specific person
+                    --> in sql: delete from tablename where name='shaik'
+                    -->in orm:
+                        --> first we have to fetch data of a person
+                                info = Emp.objects.get(first_name='siva')
+                        --> call delete function;
+                                info.delete()
+    -->crud operations:
+            --> using basic procedure
+                    -->we have to create .html file and then we have to generate form
+            --> usng forms.py(using functions ony)
+                    --> in this procedure no need to generate form
+            --> generics(class based)
+
+---> task: complete registration process using basic procedure
+
+
+
+
+            
+                    
+
+
+
+            
+
+
+
+                            
+                    
+
+
+
+
+
+                        
+
+
+
+                        
+
+
+
+                    
+                            
+                        
+                    
+                
+
+
+
+
+
+
+                
+                    
+
+
+
+
+
+        
+
+            
+        
+        
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+        
+                        
