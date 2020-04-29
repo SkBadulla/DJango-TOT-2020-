@@ -1,0 +1,10 @@
+Good Morning All:
+===============
+--> include:
+    -->by using include function we will navigate request from
+        main urls.py to apps urls.py
+        --> first we have to create urls.py inside our app
+        --> for navigating request here i will use include(),for this
+            include i will pass a value 'myapp2.urls'
+-->implementing CRUD operations using forms.py
+    

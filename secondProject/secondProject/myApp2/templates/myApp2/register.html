@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registraion Form</title>
+</head>
+<body>
+	<form action="{% url 'register' %}" method="POST">
+		{% csrf_token %}
+		<table>
+		<tr><td>Enter Id</td><td>{{form.stuid}}</td></tr>
+		<tr><td>Enter Name</td><td>{{form.stuName}}</td></tr>
+		<tr><td>select Branch</td><td>{{form.branch}}</td></tr>
+
+		<tr><td>Age</td><td>{{form.age}}</td></tr>
+		</table>
+		<input type="submit" name="submit" value="Save">
+	</form>
+</body>
+</html>

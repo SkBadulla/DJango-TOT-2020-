@@ -1,0 +1,6 @@
+Good morning all:
+===============
+    -->implementing crud application using basic procedure
+        -->adddng new record
+        -->fetching all records
+        -->redirect
