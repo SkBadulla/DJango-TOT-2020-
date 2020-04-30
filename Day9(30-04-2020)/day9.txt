@@ -1,0 +1,39 @@
+Good Morning All:
+===============
+    --> fetching data from database
+    --> using bootstrap
+    --> form validations:
+            -->clientside vaidations
+                --> for clientside valiadtions we are javascript like using
+                    patterns or required attributr
+            -->serverside validations
+                --> we will call a specia function is_valid()
+
+    --> update:
+        task: user acout creation
+            -->create new app withur own name
+            --> model fields
+                    -->firstName
+                    -->lastName
+                    -->userName
+                    -->password
+                    -->mailId
+                    -->phoneNumber
+                    -->age
+        --> you have to generate register.html
+                    -->without password texbox
+        -->in views.py ypu have to generaet dynamic password for user
+                with lastName@123
+        -->after regisration u can show password to user using HttpResponse
+    -->login:
+        -->if username and password is valid then show his details
+        in table format
+
+
+
+
+
+                    
+
+                    
+    --> delete

@@ -10,3 +10,6 @@ class Student(models.Model):
 	stuName = models.CharField(max_length=50)
 	branch = models.CharField(max_length=50,choices=branches)
 	age = models.IntegerField()
+
+	def __str__(self):
+		return self.stuid+' '+self.stuName
