@@ -9,6 +9,11 @@
 </head>
 <body>
 	<div class="container">
+		{% if messages %}
+			{% for msg in messages %}
+			<div class="alert alert-{{ msg.tags }}">{{ msg }}</div>
+			{% endfor %}
+		{% endif %}
 		<form action="{% url 'register' %}" method="POST">
 			<div class="card">
 				<div class="card-header  bg-primary">Registration From</div>

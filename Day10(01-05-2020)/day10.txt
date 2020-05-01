@@ -1,0 +1,34 @@
+Good morning all:
+===============
+    -->delete:
+            --> Procedure to remove a perticula person based his id
+                -->first we have to check that person id is existed or not in our db
+                        ClassName.objects.get(id=id)
+                --> if id is existed:
+                    -->take conformation from user like are sure to delete
+                        -->if that person conformation is True
+                            obj.delete()
+    -->Messages:
+            --> in django messages is a model for generatig alerts
+            --> for accessing that mesage we have to mention this statemet
+                --> from django.contrib import messages
+            types of messages:
+                -->messages.info
+                    -->messages.info(request,'your record added successfully')
+                -->messages.success
+                -->messages.warning
+                -->messages.error
+                -->messages.debug
+            procedure for to show message in html file:
+                {% if messages %}
+                    {% for msg in message %}
+                            <h2>{{ msg }}</h2>
+                    {% endfor %}
+
+                {% endif %}
+
+
+
+
+
+                
