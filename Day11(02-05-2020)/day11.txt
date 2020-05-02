@@ -1,0 +1,18 @@
+Good morning all:
+===============
+    -->MySQL connections:
+        -->for making mysql connection we have to install mysql drivers
+            pip install mysqlclient
+
+    --->Image uploading or file uploaing:
+        -->in settings.py we have to add two statements
+            MEDIA_ROOT =os.path.join(BASE_DIR,'userAccount/static/gallery')
+            MEDIA_URL = '/gallery/'
+        -->in main urls.py
+            from django.conf import settings
+            from django.conf.urls.static import static
+
+            if settings.DEBUG:
+                urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+            
+        

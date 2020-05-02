@@ -13,7 +13,9 @@ def signUp(request):
 		mailId=request.POST['mailId']
 		phoneNumber=request.POST['phoneNumber']
 		age = request.POST['age']
-		form = Signup(firstName=firstName,lastName=lastName,userName=userName,password=password,mailId=mailId,phoneNumber=phoneNumber,age=age)
+		form = Signup(firstName=firstName,lastName=lastName,
+			userName=userName,password=password,mailId=mailId,
+			phoneNumber=phoneNumber,age=age)
 		form.save()
 		return HttpResponse('hi this is ur pwd'+password)
 	form = SignupForm()
@@ -30,3 +32,7 @@ def signin(request):
 			#return HttpResponse('valid user')
 		return HttpResponse('not valid')
 	return render(request,'secondapp/login.html',{})
+
+
+
+	
