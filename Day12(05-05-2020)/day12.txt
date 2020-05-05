@@ -1,0 +1,32 @@
+Good morning all:
+===============
+    -->image uploading
+    -->task1:
+        -->create a new url with displayImages
+            localhost:8000/displayimages
+        -->display all images in diaplyimages.html
+    --> mail sending:
+        -- beofe send a mail we have to make a configuration in our
+            gmail account.
+
+            --> allow lesssecurity app for few security resons
+            --> we have add few statements in settings.py
+                        EMAIL_USE_TLS=True
+                        EMAIL_HOST = 'smtp.gamil.com'
+                        EMAIL_PORT = 587
+                        EMAIL_HOST_USER ='badulla.apssdc@gmail.com'
+                        EMAIL_HOST_PASSWORD='UR PASSWORD'
+
+            --> to send a mail we have to import sendmail module
+                    from django.core.mail import send_mail
+                    send_mail(subject,msg,sender,receiver)
+            -->send password to respective mails(continue previous task )
+
+                    
+                    
+
+
+
+            
+            
+    
