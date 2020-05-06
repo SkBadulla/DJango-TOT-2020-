@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'userAccount',
+    'forUser',
+    'userApp',
 ]
 
 MIDDLEWARE = [
@@ -130,8 +132,8 @@ EMAIL_USE_TLS=True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER ='badulla.apssdc@gmail.com'
-EMAIL_HOST_PASSWORD='2142112121809'
+EMAIL_HOST_PASSWORD=''
 
 
 
-
+LOGIN_REDIRECT_URL = 'home'
