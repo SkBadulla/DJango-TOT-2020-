@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Signin Form</title>
-</head>
-<body>
-<form method="POST" action="">
-	{% csrf_token %}
-	{{form.as_p}}
-	<button type="submit">signIn</button>
-</form>
-</body>
-</html>
+{% extends 'userApp/header.html' %}
+{% block title %}SignIn Form {%endblock title%}
+{% block content %}
+
+<div class="row justify-content-center">
+	<div class="card">
+		<div class="card-header">LogIn Form</div>
+		<div class="card-body">
+			<form method="POST" action="">
+				{% csrf_token %}
+				{{form.as_p}}
+				<button class="btn btn-info" type="submit">signIn</button>
+			</form>
+		</div>
+	</div>
+</div>
+{%endblock content %}

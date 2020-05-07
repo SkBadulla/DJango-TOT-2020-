@@ -1,0 +1,17 @@
+Good morning all:
+===============
+    --> how many of you completed yesterday task
+    --> DTL:
+        -->how to print constant values
+        --> how to implement logics
+        --> blocks implementation
+            --> we will implement different pages like nav.html,header.html,home.html
+                --> to include this all files we will use two different functions those are
+                    include and extends
+                    -->include: we will try to include something in current page from some other page
+                    -->extends: here we will provide parent and child relationship.
+        -->task1:
+            after login update profile with new fields
+                -->primary model is User
+                -->you can create new model like Details
+                    -->in that mention age,gender,phoneno,image
