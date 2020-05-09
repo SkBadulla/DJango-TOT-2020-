@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'userAccount',
-    'forUser',
     'userApp',
 ]
 
@@ -125,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'userAccount/static/images')
+MEDIA_ROOT = os.path.join(BASE_DIR,'userApp/static/images')
 MEDIA_URL = '/images/'
 
 EMAIL_USE_TLS=True
@@ -137,3 +136,4 @@ EMAIL_HOST_PASSWORD=''
 
 
 LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL = 'login'

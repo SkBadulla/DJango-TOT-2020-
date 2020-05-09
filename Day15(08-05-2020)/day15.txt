@@ -1,0 +1,33 @@
+Good morning all:
+================
+    -->db relationships
+        -->one to one
+            -->
+        -->one to many
+        -->many to one
+        -->many to many
+    -->normalizations:
+        we will break a lorge table into small tables
+        --> we will try to remove duplicates
+        --> we have to consider one table as a primary table that means
+            we have to key primary key in main table
+        -->1 nf
+        -->2nd nf
+        -->3rd nf
+        -->bcnf
+        -->forignkey in secondary table
+
+--> navigating request to login form:
+        if user not existed it will try to redirect request to login.html page
+        -->for that we have to import login_required
+            from django.contrib.auth.decorators import login_required
+        --> in settings.py we have to mention a statement
+                LOGIN_URL= 'login'
+
+
+
+
+
+
+    
+        

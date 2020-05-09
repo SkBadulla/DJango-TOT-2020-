@@ -25,7 +25,6 @@ urlpatterns = [
     path('profile/<int:id>',views.profile,name='profile'),
     path('upload/',views.upload,name='upload'),
     path('displayimages/',views.displayimages,name='displayimages'),
-    path('user/',include('forUser.urls')),
     path('userApp/',include('userApp.urls')),
 ]
 if settings.DEBUG:
